@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="path/to/agrandir-font.css" rel="stylesheet">
+</head>
+<body>
+    <section class="hero-section">
+        <header class="main-header">
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item" id="home"><a href="#hero" class="nav-link">Home</a></li>
+                    <li class="nav-item" id="experience"><a href="#abt-section" class="nav-link">Experience</a></li>
+                    <li class="nav-item" id="skill"><a href="#skill-section" class="nav-link">Skill</a></li>
+                    <li class="nav-item" id="portfolio"><a href="#project-section" class="nav-link">Portfolio</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero-content" id="hero">
+            <div class="hero-text">
+                <h2 class="hero-title">hello!</h2>
+                <p class="hero-description">
+                    I am a <strong>2D game designer</strong> currently expanding my skills in 
+                    <strong>3D design</strong>. I also occasionally work on 
+                    <strong>UI/UX design</strong> and am diving deeper into coding, 
+                    particularly with <strong>HTML</strong> and <strong>CSS</strong>.
+                </p>
+                <a href="#about-content" class="btn btn-primary">see more</a>
+            </div>
+        </div>
+    </section>
+        <div class="about-content  hidden" id="about-content">
+            <div class="about-text">
+                <h2 class="about-title">hi, im ina</h2>
+                <p class="about-description">
+                    Let me introduce myself, I am <strong>Davina Tegar Putri Ervia,</strong> a student at <strong>SMKN 4 Malang.</strong> I am a <strong>game designer</strong> specializing in creating characters, game assets, and UI/UX designs. My work spans both <strong>2D</strong> and <strong>3D</strong> formats. 
+                </p>
+                <p class="about-description">
+                    Currently, I am completing a pre-internship at <strong>Unimasoft</strong>, where I am under the guidance of the CEO as well as senior industry peers who also work or intern at <strong>Unimasoft</strong>. As a game designer, I am responsible for creating <strong>character illustrations, game assets,</strong> and <strong>UI/UX elements</strong>. <strong>I have a solid background in design, particularly in digital illustration and UI/UX.</strong>
+
+                </p>
+            </div>
+
+            <div class="about-image">
+                <img src="meh.png" class="meh-image" alt="Davina Portfolio photo">
+            </div>
+        </div>
+   </section>
+
+   <section class="abt-section  hidden" id="abt-section">
+        <div class="abt-content">
+            <h2 class="abt-title">My Experience</h2>
+        </div>
+
+        <div class="timeline">
+            <div class="container-right">
+                <img src="toga.png" class="img-container">
+                <div class="text-box">
+                    <h2>student software engineering</h2>
+                    <small>2023-2024</small>
+                    <p>I am studying software engineering at SMKN 4 Malang. From knowing nothing, I am progressing to understanding it well.</p>
+                </div>
+            </div>
+
+            <div class="container-left">
+                <img src="sett.png" class="img-container">
+                <div class="text-box">
+                    <h2>Internship Preparation in Industry</h2>
+                    <small>2024</small>
+                    <p>In an industry called Unimasoft, I work in the game design department. My tasks include creating character designs, game assets like buttons, and also designing the game’s UI/UX.</p>
+
+                </div>
+            </div>
+        </div>
+   </section>
+   <section class="skill-section hidden" >
+    <div class="skill-content">
+        <h2 class="abt-skill">Technical Skills</h2>
+        <div class="skill-buttons">
+            <a class="skill-btn active" data-tab="software">Software Skills</a>
+            <a class="skill-btn" data-tab="coding">Coding Skills</a>
+        </div>
+    </div>
+
+    <!-- Tab Contents dalam container terpisah -->
+    <div class="tab-container">
+        <!-- Software Skills Content -->
+        <div class="content-section" id="software">
+            <div class="software-content">
+                <img src="adobe.png" class="adobe-image">
+                <p class="adobe-text">I've been studying Adobe Illustrator for about a year, so I'm more inclined toward 2D artwork. In Adobe Illustrator, I work on creating characters, game assets (such as backgrounds), and have also created an illustration for a competition. I've learned all the basics of the software through hands-on experience, and now I’m focusing on exploring additional tools to enhance the quality of my work.</p>
+            </div>
+            <div class="software-content">
+                <img src="figma.png" class="figma-image">
+                <p class="figma-text">Figma is no stranger to designers, especially in UI/UX. I have been familiar with Figma since 2023. Initially, I had little understanding of its tools, particularly the prototyping feature. However, over time, I became accustomed to the tools in Figma, from masking to prototyping.</p>
+            </div>
+            <div class="software-content">
+                <img src="blendeer.png" class="blender-image">
+                <p class="blender-text">I started learning Blender in July and have continued studying it until now. Creating characters or assets in 3D isn’t easy, so I need to practice continuously to get used to it.</p>
+            </div>
+        </div>
+
+        <!-- Coding Skills Content -->
+        <div class="content-section" id="coding">
+            <div class="coding-content">
+                <h2 class="coding-title">HTML</h2>
+                <p class="coding-text">I started learning HTML in 2023 and found it relatively easy to learn. I learned a lot from my mentor and YouTube tutorials. HTML provides a strong foundation for building web page structures, with tags and attributes that are easy to understand. Learning HTML sparked my interest in exploring other web technologies, such as CSS</p>
+            </div>
+            <div class="coding-content">
+                <h2 class="coding-title">CSS</h2>
+                <p class="coding-text">The same goes for CSS. I realize the importance of discipline in practicing consistently. CSS allows me to control the appearance and design of web pages, and with regular practice, I am becoming more familiar with using various properties and techniques to create attractive and responsive pages. With continuous practice, I’m confident my CSS skills will continue to improve.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="project-section hidden" id="project-section"></section>
+    <div class="project-content">
+        <h2 class="abt-project">My Project</h2>
+        <div class="project-buttons">
+            <a class="project-btn active" data-tab="desain">Design</a>
+            <a class="project-btn" data-tab="project">Project</a>
+        </div>
+        
+        <div class="tab-container">
+            <div class="content-section" id="desain">
+                <!--desain content-->
+                <div class="design-card">
+                    <img src="map.png" class="design-image">
+                    <p class="design-description">
+                        This is a map for a game that I created. I didn't program the game itself, only the UI. This is one of the projects I worked on independently. I worked on this map for a full day using Figma and Adobe Illustrator.
+                    </p>
+                </div>
+                <div class="design-card">
+                    <img src="shop.png" class="design-image">
+                    <p class="design-description">This is one of the UIs I worked on, which is the shop UI for the game "Bouncy Ball." This is a group game project led by a senior and the owner of the company. My friend and I worked together with our teammates, who happened to be the game designers. We worked on it for about two weeks or more, as there were several revisions that extended the work time. In the end, the shop UI design that I created was approved by the project lead.</p>
+                </div>
+                <div class="design-card">
+                    <img src="tiger.png" class="design-image">
+                    <p class="design-description">Mr. Tiger is the name of a character for the game our team is working on. I was assigned the task of designing the characters in the game, and one of them is this tiger character.</p>
+                </div>
+                <div class="design-card">
+                    <img src="croco.png" class="design-image">
+                    <p class="design-description">Mr. Croco is the name of a character in the game our team is developing. I was tasked with designing the characters, and one of the characters I worked on is this crocodile, Mr. Croco.</p>
+                </div>
+                <div class="design-card">
+                    <img src="hippo.png" class="design-image">
+                    <p class="design-description">Mr. Hippo is the name of a character in the game our team is working on. I was responsible for designing the characters, and one of the characters I created is this hippo, Mr. Hippo.</p>
+                </div>
+                <div class="design-card">
+                    <img src="illus.png" class="design-image">
+                    <p class="design-description">I created this illustration for a poster competition at Universitas Brawijaya. I started by sketching the design in my sketchbook, then scanned and traced it in Adobe Illustrator. Using Illustrator, I refined the lines, added color, and experimented with different effects to make the design visually striking. This process allowed me to blend traditional sketching with digital tools to create a polished final poster.</p>
+                </div>
+            </div>
+
+            <div class="content-section hidden" id="project">
+                <!-- Card 1 -->
+                <div class="project-card">
+                    <div class="video-wrapper">
+                        <video autoplay muted loop playsinline src="figma 4.mp4" class="project-video" controls></video>
+                    </div>
+                    <p class="project-description">
+                        This is my first attempt at designing a game. At the start, I wasn't familiar with Figma or its prototyping tools, so the outcome wasn't as polished as I'd hoped. My lack of experience showed, but it's a valuable learning step forward.
+                    </p>
+                </div>
+            
+                <!-- Card 2 -->
+                <div class="project-card">
+                    <div class="video-wrapper">
+                        <video autoplay muted loop playsinline src="figma 3.mp4" class="project-video" controls></video>
+                    </div>
+                    <p class="project-description">
+                        Here is the result of the UI project that already has a prototype. This is my first experience using the prototype feature in Figma.
+                    </p>
+                </div>
+            
+                <!-- Card 3 -->
+                <div class="project-card">
+                    <div class="video-wrapper">
+                        <video autoplay muted loop playsinline src="maze.mp4" class="project-video" controls></video>
+                    </div>
+                    <p class="project-description">
+                        This is our final project, where I was responsible for designing the UI/UX for the game "MAZE." In this project. After several iterations and feedback sessions, this is the final result that we present, showcasing the design elements and features we implemented for the game.
+                    </p>
+                </div>
+            </div>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="contact-content">
+        <h2 class="contact-title">Find Me in :</h2>
+    </div>
+    <div class="social-links">
+        <a href="https://www.instagram.com/harinahceah/profilecard/?igsh=M3FuOXc3MDUzNDg3" class="social-button" target="_blank">
+            <img src="insta.png" alt="Instagram">
+            <span>Instagram</span>
+        </a>
+        <a href="https://github.com/davinategar" class="social-button" target="_blank">
+            <img src="github.png" alt="GitHub">
+            <span>GitHub</span>
+        </a>
+        <a href="#" class="social-button">
+            <img src="gmail.png" alt="Gmail">
+            <span>Gmail</span>
+        </a>
+    </div>
+
+</section>
+
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    // Fungsi untuk skill buttons
+    const skillBtns = document.querySelectorAll('.skill-btn');
+    const skillContentSections = document.querySelectorAll('#software, #coding');
+
+    skillBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            skillBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            const targetContent = btn.getAttribute('data-tab');
+            
+            skillContentSections.forEach(section => {
+                section.style.display = 'none';
+                section.classList.remove('active');
+            });
+
+            const targetSection = document.getElementById(targetContent);
+            if (targetSection) {
+                targetSection.style.display = 'block';
+                targetSection.classList.add('active');
+            }
+        });
+    });
+
+    // Fungsi untuk project buttons
+    const projectBtns = document.querySelectorAll('.project-btn');
+    const projectContentSections = document.querySelectorAll('#desain, #project');
+
+    projectBtns.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            projectBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+
+            const targetTab = this.getAttribute('data-tab');
+            
+            projectContentSections.forEach(section => {
+                section.style.display = 'none';
+                section.classList.remove('active');
+            });
+
+            const targetContent = document.getElementById(targetTab);
+            if (targetContent) {
+                targetContent.style.display = 'block';
+                targetContent.classList.add('active');
+            }
+        });
+    });
+
+    // Set default active states
+    if (skillBtns.length > 0) {
+        const firstSkillTab = document.getElementById('software');
+        if (firstSkillTab) {
+            firstSkillTab.style.display = 'block';
+            firstSkillTab.classList.add('active');
+        }
+    }
+
+    if (projectBtns.length > 0) {
+        const firstProjectTab = document.getElementById('desain');
+        if (firstProjectTab) {
+            firstProjectTab.style.display = 'block';
+            firstProjectTab.classList.add('active');
+        }
+    }
+});
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const projectBtns = document.querySelectorAll('.project-btn');
+    const contentSections = document.querySelectorAll('.content-section');
+
+    projectBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Remove active class from all buttons
+            projectBtns.forEach(b => b.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+
+            // Hide all content sections
+            contentSections.forEach(section => section.classList.remove('active'));
+            // Show selected content section
+            const targetId = this.getAttribute('data-tab');
+            document.getElementById(targetId).classList.add('active');
+        });
+    });
+});
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Script yang sudah ada tetap di atas
+        
+        // Tambahkan kode scroll smooth untuk home link
+        document.querySelector('a[href="#hero"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#hero').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Kode yang sudah ada tetap di atas
+            
+            // Tambahkan event listener untuk button see more
+            document.querySelector('a[href="#about-content"]').addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector('#about-content').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('a[href="#abt-section"]').addEventListener('click', function(e) {
+                e.preventDefault();
+                const section = document.querySelector('#abt-section');
+                const offset = 95; // Sesuaikan dengan tinggi navbar
+                const bodyRect = document.body.getBoundingClientRect().top;
+                const elementRect = section.getBoundingClientRect().top;
+                const elementPosition = elementRect - bodyRect;
+                const offsetPosition = elementPosition - offset;
+    
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const hiddenElements = document.querySelectorAll('.hidden');
+            hiddenElements.forEach((el) => observer.observe(el));
+        });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+    const containers = document.querySelectorAll('.container-left, .container-right');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('appear');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    containers.forEach(container => {
+        observer.observe(container);
+    });
+});
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('a[href="#skill-section"]').addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const section = document.querySelector('.skill-section');
+                    const offset = 95; // Sesuaikan dengan tinggi navbar
+                    const bodyRect = document.body.getBoundingClientRect().top;
+                    const elementRect = section.getBoundingClientRect().top;
+                    const elementPosition = elementRect - bodyRect;
+                    const offsetPosition = elementPosition - offset;
+        
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const portfolioLink = document.querySelector('#portfolio a');
+                portfolioLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const projectSection = document.querySelector('#project-section');
+                    projectSection.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('a[href="#contact-section"]').addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const section = document.querySelector('.contact-section');
+                    const offset = 95; // Sesuaikan dengan tinggi navbar
+                    const bodyRect = document.body.getBoundingClientRect().top;
+                    const elementRect = section.getBoundingClientRect().top;
+                    const elementPosition = elementRect - bodyRect;
+                    const offsetPosition = elementPosition - offset;
+        
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('#contact a').addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const contactSection = document.querySelector('.contact-section');
+                    const offset = 95; // Sesuaikan dengan tinggi navbar jika perlu
+                    
+                    const bodyRect = document.body.getBoundingClientRect().top;
+                    const elementRect = contactSection.getBoundingClientRect().top;
+                    const elementPosition = elementRect - bodyRect;
+                    const offsetPosition = elementPosition - offset;
+        
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+</body>
+</html>
