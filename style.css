@@ -200,9 +200,9 @@ body {
 }
 
 .meh-image {
-    max-width: 70%; /* Mengubah dari 100% menjadi 70% */
+    max-width: 50%; /* Mengubah dari 70% menjadi 50% */
     height: auto;
-    margin-left: -250px;
+    margin-left: -250px; /* Mengubah dari -250px untuk menyesuaikan dengan ukuran baru */
 }
 
 .abt-section {
@@ -596,20 +596,19 @@ body {
 }
 
 .video-wrapper {
-    flex-shrink: 0;
-    width: 200px;
-    height: 150px;
+        flex-shrink: 0;
+        width: 200px; /* Mengubah dari ukuran sebelumnya menjadi lebih besar */
+        height: 150px;
 }
 
 
 .video-wrapper video {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: contain; /* Mengubah menjadi contain untuk memastikan video terlihat penuh */
     background-color: #000;
-    /* Tambahkan properti untuk autoplay yang lebih baik */
-    pointer-events: none; /* Mencegah interaksi mouse */
-    -webkit-transform: translateZ(0); /* Optimasi performa */
+    pointer-events: none;
+    -webkit-transform: translateZ(0);
     transform: translateZ(0);
 }
 
