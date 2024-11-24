@@ -71,8 +71,9 @@ body {
     justify-content: space-between;
     width: 90%;
     max-width: 1700px;
-    padding-top: 196px;
+    padding-top: 46px; /* Mengubah dari 196px */
 }
+
 
 .hero-text {
     max-width: 600px;
@@ -166,18 +167,21 @@ body {
 
 .about-content {
     display: flex;
-    align-items: center; /* Kembali ke center */
-    justify-content: space-between; /* Kembali ke space-between */
+    align-items: center;
+    justify-content: space-between;
     width: 90%;
     max-width: 1900px;
-    padding-top: -12px;
+    padding-top: 91px;
+    margin-left: auto; /* Menambahkan margin-left auto */
+    margin-right: 50px; /* Menambahkan margin-right */
 }
+
 
 .about-title {
     font-size: 7em;
     font-weight: 900;
-    margin-bottom: 20px; /* Mengembalikan margin-bottom */
-    text-align: left; /* Kembali ke left */
+    margin-bottom: 20px;
+    margin-left: 200px; /* Mengubah dari 90px menjadi 200px untuk geser ke kanan */
     color: #173B45;
 }
 
@@ -191,25 +195,27 @@ body {
 }
 
 .about-image {
-    width: 400px; /* Mengembalikan ke ukuran semula */
-    margin-left: 50px; /* Mengembalikan margin-left */
+    width: 100px; /* Mengembalikan ke ukuran semula */
+    margin-left: -150px; /* Mengembalikan margin-left */
 }
 
 .meh-image {
     max-width: 70%; /* Mengubah dari 100% menjadi 70% */
     height: auto;
+    margin-left: -250px;
 }
 
 .abt-section {
     position: relative;
     background-color: #F8EDED;
-    margin-top: 20px; /* Ubah dari 100px */
+    margin-top: 50px; /* Mengubah dari 20px */
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
-    padding-top: -9px; /* Tambahkan padding-top sebesar tinggi navbar */
+    padding-top: 50px; /* Mengubah dari -9px */
     padding-bottom: 100px;
 }
+
 
 .abt-title {
     font-size: 5em;
@@ -533,31 +539,7 @@ body {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-.design-card {
-    display: flex;
-    align-items: center;
-    background-color: #F8EDED;
-    border: 1.6px solid #B43F3F;
-    border-radius: 25px;
-    padding: 20px;
-    margin: 20px 100px;
-    max-width: 800px;
-    gap: 30px;
-}
 
-.design-image {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-    flex-shrink: 0;
-}
-
-.design-description {
-    font-size: 1em;
-    line-height: 1.5;
-    color: #173B45;
-}
 /* Project Content Styling */
 .content-section#project {
     display: none;
@@ -566,35 +548,59 @@ body {
     padding: 20px 100px;
     margin-top: 20px;
 }
-
+.design-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F8EDED;
+    border: 1.6px solid #B43F3F;
+    border-radius: 25px;
+    padding: 15px;
+    margin: 20px auto; /* Center card */
+    width: 90%; /* Lebar relatif terhadap parent */
+    max-width: 1200px; /* Memperbesar max-width */
+    gap: 20px;
+}
+.design-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+.design-description {
+    flex: 1;
+    font-size: 1em;
+    line-height: 1.4;
+    color: #173B45;
+    /* Membatasi tinggi teks */
+    max-height: 100px;
+    overflow-y: auto;
+}
 .content-section#project.active {
     display: flex;
 }
 
 .project-card {
-    position: relative;
-    background: #F8EDED;
-    border: 2px solid #FF9898;
-    border-radius: 25px;
-    padding: 20px;
-    width: 100%;
-    max-width: 700px;
-    margin: 0 0 33px 100px; /* Mengubah margin menjadi left 100px */
-    margin-left: 0;
-    margin-top: -16px;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+    background-color: #F8EDED;
+    border: 1.6px solid #B43F3F;
+    border-radius: 25px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
     gap: 20px;
 }
+
 .video-wrapper {
-    width: 56%;
-    height: 250px;
-    border-radius: 15px;
-    overflow: hidden;
-    margin-bottom: 0;
     flex-shrink: 0;
+    width: 200px;
+    height: 150px;
 }
+
 
 .video-wrapper video {
     width: 100%;
@@ -607,15 +613,21 @@ body {
     transform: translateZ(0);
 }
 
-.project-description {
-    color: #173B45;
-    font-size: 0.95em;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0 5px;
-    flex: 1; /* Mengambil sisa ruang yang tersedia */
+.project-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
+.project-description {
+    flex: 1;
+    font-size: 1em;
+    line-height: 1.4;
+    color: #173B45;
+    max-height: 120px;
+    overflow-y: auto;
+}
 /* Menyesuaikan responsive design */
 @media screen and (max-width: 768px) {
     .project-card {
@@ -785,7 +797,7 @@ body {
     }
     
     .meh-image {
-        max-width: 200%;
+        max-width: 97%;
         margin-left: 0;
     }
     
@@ -850,13 +862,7 @@ body {
     .skill-btn, .project-btn {
         padding: 10px 30px;
         font-size: 1.2em;
-    }
-    
-    .design-card, .project-card {
-        margin: 20px;
-        flex-direction: column;
-    }
-    
+    }   
     .video-wrapper {
         width: 100%;
     }
@@ -1197,5 +1203,76 @@ body {
     .coding-title {
         font-size: 2.5em;
         margin-left: 10px;
+    }
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .design-card {
+        width: 85%;
+        padding: 12px;
+        gap: 15px;
+    }
+    
+    .design-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .design-description {
+        font-size: 0.9em;
+        max-height: 80px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .design-card {
+        width: 90%;
+        padding: 10px;
+        gap: 12px;
+    }
+    
+    .design-image {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .design-description {
+        font-size: 0.85em;
+        max-height: 70px;
+    }
+}
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .project-card {
+        width: 85%;
+        padding: 12px;
+        gap: 15px;
+    }
+    
+    .video-wrapper {
+        width: 150px;
+        height: 120px;
+    }
+    
+    .project-description {
+        font-size: 0.9em;
+        max-height: 100px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .project-card {
+        width: 90%;
+        padding: 10px;
+        gap: 12px;
+    }
+    
+    .video-wrapper {
+        width: 120px;
+        height: 100px;
+    }
+    
+    .project-description {
+        font-size: 0.85em;
+        max-height: 90px;
     }
 }
